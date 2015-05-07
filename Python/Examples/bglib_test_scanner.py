@@ -67,9 +67,10 @@ def my_ble_evt_gap_scan_response(sender, args):
 
 def main():
     # NOTE: CHANGE THESE TO FIT YOUR TEST SYSTEM
-    port_name = "com5"
-    baud_rate = 38400
-    packet_mode = True
+    port_name = "/dev/ttyACM0"
+    baud_rate = 115200
+    #packet_mode = True
+    packet_mode = False
 
     # create BGLib object
     ble = bglib.BGLib()
